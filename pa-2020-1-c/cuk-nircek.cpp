@@ -16,6 +16,7 @@ int64_t gcdExtended(int64_t a, int64_t b, int64_t *x, int64_t *y) {
   return gcd;
 }
 int64_t modInverse(int64_t b) {
+  ////////////////////////////////////////// b^(p-2) !!!!!!!!!!!!!!!!!!!!!!!!!!!
   int64_t x, y;
   int64_t g = gcdExtended(b, prime, &x, &y);
   if(g != 1)
